@@ -46,9 +46,18 @@ self.billType=billType
     
     func getBillDate()->Date
     {
-    return billDate
+        return self.billDate
     }
     func setBillDate(billDate:Date){
     self.billDate=billDate
 }
-}
+    
+    }
+
+
+
+
+
+
+
+
