@@ -35,4 +35,15 @@ return self.unitComsumed
 }
 func setUnitComsumed(unitComsumed:Int)
 {
+self.unitComsumed=unitComsumed
+}
 
+func getAgencyName()->String
+{
+return self.agencyName
+}
+func setAgencyName(agencyName:String)
+{
+self.agencyName=agencyName
+}
+}
