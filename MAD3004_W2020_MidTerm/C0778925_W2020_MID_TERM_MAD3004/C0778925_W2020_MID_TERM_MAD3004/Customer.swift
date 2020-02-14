@@ -12,12 +12,13 @@ class Customer
 var customerId:Int
 var firstName:String
 var lastName:String
-var fullName:String{
-print("\(firstName)", "\(lastName)")
-}
+    public var fullName: Any{
+    return ("\(firstName)" ,"\(lastName)")
+    }
+
 var emailAddress:String
     var arrayOfBills:[ObjectIdentifier]
-var totalBillToPay:Double
+    var totalBillToPay:Double=0.00
 init(customerId:Int,firstName:String,lastName:String,emailAddress:String,arrayOfBills:[ObjectIdentifier],totalBillToPay:Double)
 {
 self.customerId=customerId
