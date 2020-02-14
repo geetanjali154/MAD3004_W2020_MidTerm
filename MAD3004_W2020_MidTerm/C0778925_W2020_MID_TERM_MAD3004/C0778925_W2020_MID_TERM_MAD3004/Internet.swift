@@ -26,4 +26,26 @@ func setProviderName(providerName:String)
 self.providerName=providerName
 }
 
+func getProviderName()->String{
+return self.providerName
+}
+
+func setinternetGbUsed(internetGbUsed:Int)
+{
+self.internetGbUsed=internetGbUsed
+}
+
+func getinternetGbUsed()->Int{
+return self.internetGbUsed
+
+}
+func getRatePerGb()->Int
+{
+return self.ratePerGb
+}
+func setRatePerGb(ratePerGb:Int)
+{
+self.ratePerGb=ratePerGb
+}
+}
 
