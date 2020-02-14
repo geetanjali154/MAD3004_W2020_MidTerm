@@ -12,8 +12,8 @@ class Customer
 var customerId:Int
 var firstName:String
 var lastName:String
-    public var fullName: Any{
-    return ("\(firstName)" ,"\(lastName)")
+    public var fullName: String{
+    return "\(firstName) \(lastName)"
     }
 
 var emailAddress:String
