@@ -7,7 +7,7 @@
 //
 
 import Foundation
-extension Customer{
+extension Date{
     func dateSet(input:String)
     {
     let formatter = DateFormatter()
