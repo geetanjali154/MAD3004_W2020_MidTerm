@@ -7,12 +7,16 @@
 //
 
 import Foundation
-extension Date{
+extension String{
     func dateSet(input:String)
     {
     let formatter = DateFormatter()
     formatter.dateFormat = "MM/dd/yyyy"
     if let date = formatter.date(from: input) {
-        print(date)}
+        print(date)
+        }
+        
+    }
+    
 }
-}
+

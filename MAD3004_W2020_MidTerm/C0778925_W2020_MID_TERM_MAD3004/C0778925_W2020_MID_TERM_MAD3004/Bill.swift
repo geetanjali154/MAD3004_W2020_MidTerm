@@ -12,7 +12,7 @@ case Mobile,Internet,Hydro}
 class Bill
 {
 var billId:Int
-var billDate:Date
+var billDate:String
 var billType:BillType
 var totalBillAmount:Double?
 
@@ -23,7 +23,7 @@ func getTotalBillAmount()->Double
 init(billId:Int,billDate:String,billType:BillType)
 {
 self.billId=billId
-    self.billDate=billDate.dateSet(input:billDate)
+self.billDate=billDate
 self.billType=billType
 }
     
@@ -51,10 +51,12 @@ self.billType=billType
     func setBillDate(billDate:Date){
     self.billDate=billDate
 }*/
-    
+    func display()
+    {
+        print(self.billDate.dateSet(input: billDate))
     }
 
-
+}
 
 
 
