@@ -28,7 +28,7 @@ init(billId:Int,billDate:Date,billType:BillType,manufacturerName : String,planNa
     self.ratePerGb=ratePerGb
     super.init(billId:billId,billDate:billDate,billType:billType)
     }
-    func getManufacturerName()->String
+    /*func getManufacturerName()->String
     {
     return self.manufacturerName
     }
@@ -88,6 +88,6 @@ init(billId:Int,billDate:Date,billType:BillType,manufacturerName : String,planNa
     func setRatePerGb(ratePerGb:Int)
     {
     self.ratePerGb=ratePerGb
-    }
+    }*/
 
 }

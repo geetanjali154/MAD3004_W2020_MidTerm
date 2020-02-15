@@ -20,7 +20,7 @@ self.ratePerUnit=ratePerUnit
 super.init(billId:billId,billDate:billDate,billType:billType)
     }
 
-func getRatePerUnit()->Int
+/*func getRatePerUnit()->Int
 {
 return self.ratePerUnit
 }
@@ -45,5 +45,5 @@ return self.agencyName
 func setAgencyName(agencyName:String)
 {
 self.agencyName=agencyName
-}
+}*/
 }

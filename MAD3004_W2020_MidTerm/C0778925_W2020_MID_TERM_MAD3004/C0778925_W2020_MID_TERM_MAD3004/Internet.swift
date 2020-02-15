@@ -21,7 +21,7 @@ self.ratePerGb=ratePerGb
     super.init(billId:billId,billDate:billDate,billType:billType)
 }
 
-func setProviderName(providerName:String)
+/*func setProviderName(providerName:String)
 {
 self.providerName=providerName
 }
@@ -46,6 +46,6 @@ return self.ratePerGb
 func setRatePerGb(ratePerGb:Int)
 {
 self.ratePerGb=ratePerGb
-}
+}*/
 }
 

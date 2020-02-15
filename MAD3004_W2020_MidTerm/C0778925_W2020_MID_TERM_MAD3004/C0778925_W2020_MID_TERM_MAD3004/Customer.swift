@@ -28,7 +28,7 @@ self.emailAddress=emailAddress
 self.arrayOfBills=arrayOfBills
 }
 
-func getCustomerId()->Int{
+/*func getCustomerId()->Int{
 return customerId}
 
 func setCustomerId(customerId:Int)
@@ -50,7 +50,7 @@ return lastName}
 func setLastName(lastName:String)
 {
 self.lastName=lastName
-}
+}*/
 
 }
 
