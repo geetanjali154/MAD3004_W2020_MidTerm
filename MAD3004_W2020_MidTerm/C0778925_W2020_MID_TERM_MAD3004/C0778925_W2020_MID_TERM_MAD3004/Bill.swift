@@ -9,7 +9,7 @@
 import Foundation
 enum BillType{
 case Mobile,Internet,Hydro}
-class Bill
+class Bill:DisplayDelegate
 {
 var billId:Int
 var billDate:String

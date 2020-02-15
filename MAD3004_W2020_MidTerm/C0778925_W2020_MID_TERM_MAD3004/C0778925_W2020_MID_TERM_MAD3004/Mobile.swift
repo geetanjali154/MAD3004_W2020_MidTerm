@@ -17,7 +17,7 @@ var ratePerGb:Int
 var minutesUsage : Int
 var ratePerMinute:Int
 
-init(billId:Int,billDate:Date,billType:BillType,manufacturerName : String,planName : String,mobileNumber : String,internetUsage : Int,minutesUsage : Int,ratePerGb:Int,ratePerMinute:Int)
+init(billId:Int,billDate:String,billType:BillType,manufacturerName : String,planName : String,mobileNumber : String,internetUsage : Int,minutesUsage : Int,ratePerGb:Int,ratePerMinute:Int)
     {
     self.manufacturerName=manufacturerName
     self.planName=planName
