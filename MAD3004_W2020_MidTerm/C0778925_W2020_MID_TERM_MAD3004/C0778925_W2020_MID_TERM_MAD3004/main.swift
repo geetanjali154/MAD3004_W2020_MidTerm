@@ -10,10 +10,8 @@ import Foundation
 
 class Main
 {
-    static func from(year: Int, month: Int, day: Int) -> Date? {
-    let calendar = Calendar(identifier: .gregorian)
-    var dateComponents = DateComponents()
-    dateComponents.day = day
-    return calendar.date(from: dateComponents)
-}
+   func a()
+   {
+    Mobile m=Mobile(billId:1,billDate:"20/09/1996"),billType:.Mobile,manufacturerName :"a","a","a",1,1,1,1)
+    }
 }
