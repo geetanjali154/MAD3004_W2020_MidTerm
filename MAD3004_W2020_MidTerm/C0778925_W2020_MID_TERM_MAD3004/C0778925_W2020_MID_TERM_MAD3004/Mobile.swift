@@ -89,5 +89,8 @@ init(billId:Int,billDate:String,billType:BillType,manufacturerName : String,plan
     {
     self.ratePerGb=ratePerGb
     }*/
-
+    func display()
+    {
+        print(self.billDate.dateSet(input: billDate))
+    }
 }

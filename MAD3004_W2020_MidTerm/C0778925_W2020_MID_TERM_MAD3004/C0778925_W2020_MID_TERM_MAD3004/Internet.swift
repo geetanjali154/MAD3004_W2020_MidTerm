@@ -12,7 +12,7 @@ class Internet:Bill
 var providerName:String
 var internetGbUsed:Int
 var ratePerGb:Int
-init(billId:Int,billDate:Date,billType:BillType,providerName:String,internetGbUsed:Int,ratePerGb:Int)
+init(billId:Int,billDate:String,billType:BillType,providerName:String,internetGbUsed:Int,ratePerGb:Int)
 {
 
 self.providerName=providerName

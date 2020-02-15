@@ -51,10 +51,7 @@ self.billType=billType
     func setBillDate(billDate:Date){
     self.billDate=billDate
 }*/
-    func display()
-    {
-        print(self.billDate.dateSet(input: billDate))
-    }
+    
 
 }
 
