@@ -18,5 +18,10 @@ extension String{
         
     }
     
+    extension Int
+    {
+        
+    }
+    
 }
 
