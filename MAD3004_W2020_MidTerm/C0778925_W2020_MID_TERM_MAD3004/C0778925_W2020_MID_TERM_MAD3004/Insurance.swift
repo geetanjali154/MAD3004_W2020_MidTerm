@@ -28,15 +28,19 @@ class Insurance:Bill
         self.totalInstallmentToPay=totalInstallmentToPay
         super.init(billId:billId,billDate:billDate,billType:billType)
     }
+   override func calculateTotal()
+    {
+        self.totalBillAmount=Double(totalInstallmentToPay)
+    }
     override func display()
     {
         super.display()
-        print("\t Insurance Provider Name\(insuranceProviderName)")
-        print("\t Type of Insurance\(typeOfInsurance)")
-        print("\t Start Date\(startDate)")
-        print("\t End Date\(endDate)")
-        print("\t total number of days\(totalDays)")
-        print("\t total installment to pay\(totalInstallmentToPay)")
+        print("\t Insurance Provider Name : \(insuranceProviderName)")
+        print("\t Type of Insurance : \(typeOfInsurance)")
+        print("\t Start Date : \(startDate)")
+        print("\t End Date : \(endDate)")
+        print("\t total number of days : \(totalDays)")
+        
         
     }
     

@@ -24,6 +24,7 @@ var i2 = Internet(billId: "INT002", billDate: "07/23/2019", billType: .Internet,
 i2.calculateTotal()
 
 var in1=Insurance(billId:"INS01",billDate:"02/02/2020",billType:.Insurance,insuranceProviderName:"Costco Ltd",typeOfInsurance:.Car,startDate:"09/08/2019",endDate:"09/08/2021",totalDays:730,totalInstallmentToPay:700)
+in1.calculateTotal()
 var c3 = Customer(customerId: 1, firstName: "Geetanjali", lastName: "Gupta", emailAddress: "geetanjaligupta154@gmail.com")
 var c1 = Customer(customerId: 2, firstName: "Manbeer", lastName: "Kaur", emailAddress: "manbeergill545@gmail.com")
 var c2 = Customer(customerId: 3, firstName: "Manpreet", lastName: "Kaur", emailAddress: "manpreetsran454@gmail.com")
