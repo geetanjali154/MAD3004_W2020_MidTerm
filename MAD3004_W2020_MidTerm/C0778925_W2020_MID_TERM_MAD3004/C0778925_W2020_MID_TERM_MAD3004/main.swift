@@ -34,5 +34,20 @@ c3.addBill(bill: h2, billId: h2.billId)
 c1.display()
 c2.display()
 c3.display()
+var arrayOfCustomers = Array <Customer>()
+arrayOfCustomers.append(c1)
+arrayOfCustomers.append(c2)
+func customersById(id:Int){
+for i in arrayOfCustomers
+      {
+          if id==i.customerId
+          {
+           i.display()
+              
+          }
+    }
+      }
+
+customersById(id: 3)
 
 
