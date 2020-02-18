@@ -84,9 +84,9 @@ self.lastName=lastName
         {
             print("\t No bill found")
         }
-        for b in bills
+        for i in bills
         {
-        totalBillToPay += b.value.totalBillAmount
+        totalBillToPay += i.value.totalBillAmount
         }
         return totalBillToPay
 }
