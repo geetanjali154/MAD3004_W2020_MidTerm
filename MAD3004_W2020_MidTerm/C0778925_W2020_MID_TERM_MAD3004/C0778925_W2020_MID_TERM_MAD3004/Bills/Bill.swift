@@ -8,7 +8,7 @@
 
 import Foundation
 enum BillType{
-case Mobile,Internet,Hydro}
+case Mobile,Internet,Hydro,Insurance}
 class Bill:IDisplay
 {
 var billId:String
