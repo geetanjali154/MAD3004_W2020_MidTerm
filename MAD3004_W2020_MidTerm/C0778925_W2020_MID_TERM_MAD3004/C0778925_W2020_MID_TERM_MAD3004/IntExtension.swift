@@ -7,17 +7,3 @@
 //
 
 import Foundation
-extension Int{
-    func gb() -> String
-    {
-        return "\(self)GB"
-    }
-    func min() -> String
-       {
-           return "\(self)minutes"
-       }
-    func unit() -> String
-    {
-        return "\(self)units"
-    }
-}

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Customer:Bill
+class Customer:IDisplay
 {
 var customerId:Int
 var firstName:String
@@ -17,17 +17,26 @@ var lastName:String
     }
     lazy var bills=[String : Bill]()
 
-var emailAddress:String
-    var arrayOfBills:[ObjectIdentifier]
+var emailAddress:String?
+    
     var totalBillToPay:Double=0.00
     
-init(customerId:Int,firstName:String,lastName:String,emailAddress:String,arrayOfBills:[ObjectIdentifier],totalBillToPay:Double)
+init(billId:Int,billDate:String,billType:BillType,customerId:Int,firstName:String,lastName:String,emailAddress:String,totalBillToPay:Double)
 {
 self.customerId=customerId
 self.firstName=firstName
 self.lastName=lastName
-self.emailAddress=emailAddress
-self.arrayOfBills=arrayOfBills
+    
+    if emailValidation(email: emailAddress)
+    {
+        self.emailAddress=emailAddress
+    }
+     else
+     {
+         print("Invalid Email ID for \(customerId) : \(emailAddress) ")
+     }
+
+
 }
 
 /*func getCustomerId()->Int{
@@ -53,11 +62,11 @@ func setLastName(lastName:String)
 {
 self.lastName=lastName
 }*/
- func emailValidation(emailAddress:String) -> Bool {
+ func emailValidation(email:String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluate(with: emailAddress)
+        return emailTest.evaluate(with: email)
     }
     func addBill(bill: Bill, billId: String)
     {
@@ -69,7 +78,7 @@ self.lastName=lastName
         bills.removeValue(forKey: billId)
     }
 
-    func calculateTotal()->Double
+    func total()->Double
     {
         if bills.count == 0
         {
@@ -81,9 +90,9 @@ self.lastName=lastName
         }
         return totalBillToPay
 }
-    func Display() {
-        print("Custome ID : \(customerId)")
-        print("Customer Full Name : \(fullName)")
+        func display() {
+        print("Customer ID : \(customerId)")
+        print("Customer FullName : \(fullName)")
         print("Customer Email ID : \(String(describing: emailAddress))")
         print("\t ---- Bill Information ----")
         print("\t ******************************************")
@@ -93,7 +102,7 @@ self.lastName=lastName
             b.value.display()
             print("\t ******************************************")
         }
-        print("\t Total Bill Amount to Pay : \(calculateTotal())")
+        print("\t Total Bill to Pay : \(total())") 
         print("\t ****************************************** \n \n")
     }
 

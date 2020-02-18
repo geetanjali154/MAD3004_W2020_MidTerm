@@ -54,7 +54,7 @@ func display()
     print("\t Bill ID : \(billId)")
            print("\t Bill Date : \(billDate)")
            print("\t Bill Type : \(billType)")
-           print("\t Bill Amount : \(totalBillAmount.totalBill())")
+           print("\t Bill Amount : \(totalBillAmount.currency())")
     }
     
 }

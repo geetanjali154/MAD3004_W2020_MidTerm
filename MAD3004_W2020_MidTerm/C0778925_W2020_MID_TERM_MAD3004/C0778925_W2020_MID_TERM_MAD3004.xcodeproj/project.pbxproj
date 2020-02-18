@@ -15,8 +15,9 @@
 		9B0ADB2B23F75DD70094184A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0ADB2A23F75DD70094184A /* Customer.swift */; };
 		9B0ADB2D23F76FBC0094184A /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0ADB2C23F76FBC0094184A /* extension.swift */; };
 		9B0ADB3123F779CB0094184A /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0ADB3023F779CA0094184A /* DoubleExtension.swift */; };
-		9B0ADB3323F77AE10094184A /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0ADB3223F77AE10094184A /* IntExtension.swift */; };
 		9B0ADB3723FC58510094184A /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0ADB3623FC58510094184A /* IDisplay.swift */; };
+		9B0ADB3923FC5FBB0094184A /* Unit extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0ADB3823FC5FBB0094184A /* Unit extension.swift */; };
+		9B0ADB3B23FC60120094184A /* GbMin Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0ADB3A23FC60120094184A /* GbMin Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,8 +42,9 @@
 		9B0ADB2A23F75DD70094184A /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		9B0ADB2C23F76FBC0094184A /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		9B0ADB3023F779CA0094184A /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
-		9B0ADB3223F77AE10094184A /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
 		9B0ADB3623FC58510094184A /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
+		9B0ADB3823FC5FBB0094184A /* Unit extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit extension.swift"; sourceTree = "<group>"; };
+		9B0ADB3A23FC60120094184A /* GbMin Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GbMin Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +85,9 @@
 				9B0ADB2A23F75DD70094184A /* Customer.swift */,
 				9B0ADB2C23F76FBC0094184A /* extension.swift */,
 				9B0ADB3023F779CA0094184A /* DoubleExtension.swift */,
-				9B0ADB3223F77AE10094184A /* IntExtension.swift */,
 				9B0ADB3623FC58510094184A /* IDisplay.swift */,
+				9B0ADB3823FC5FBB0094184A /* Unit extension.swift */,
+				9B0ADB3A23FC60120094184A /* GbMin Extension.swift */,
 			);
 			path = C0778925_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -149,7 +152,6 @@
 			files = (
 				9B0ADB2723F75C860094184A /* Hydro.swift in Sources */,
 				9B0ADB2D23F76FBC0094184A /* extension.swift in Sources */,
-				9B0ADB3323F77AE10094184A /* IntExtension.swift in Sources */,
 				9B0ADB3123F779CB0094184A /* DoubleExtension.swift in Sources */,
 				9B0ADB2523F75AEA0094184A /* Mobile.swift in Sources */,
 				9B0ADB2323F759B70094184A /* Bill.swift in Sources */,
@@ -157,6 +159,8 @@
 				9B0ADB3723FC58510094184A /* IDisplay.swift in Sources */,
 				9B0ADB1C23F759200094184A /* main.swift in Sources */,
 				9B0ADB2923F75D630094184A /* Internet.swift in Sources */,
+				9B0ADB3B23FC60120094184A /* GbMin Extension.swift in Sources */,
+				9B0ADB3923FC5FBB0094184A /* Unit extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,16 +8,16 @@
 
 import Foundation
 extension String{
-    func dateSet(input:String)
+    func dateSet(input:String)->String
     {
     let formatter = DateFormatter()
     formatter.dateFormat = "MM/dd/yyyy"
     if let date = formatter.date(from: input) {
         formatter.locale = Locale(identifier: "en_US") 
         formatter.dateStyle = .long
-        print(formatter.string(from: date))
+        return(formatter.string(from: date))
         }
-        
+        return "Incorrect Date"
     }
     
    

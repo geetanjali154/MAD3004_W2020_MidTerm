@@ -12,12 +12,12 @@ class Mobile:Bill
 var manufacturerName : String
 var planName : String
 var mobileNumber : String
-var internetUsage : Int
-var ratePerGb:Int
-var minutesUsage : Int
-var ratePerMinute:Int
+var internetUsage : Float
+var ratePerGb:Float
+var minutesUsage : Float
+var ratePerMinute:Float
 
-init(billId:Int,billDate:String,billType:BillType,manufacturerName : String,planName : String,mobileNumber : String,internetUsage : Int,minutesUsage : Int,ratePerGb:Int,ratePerMinute:Int)
+init(billId:Int,billDate:String,billType:BillType,manufacturerName : String,planName : String,mobileNumber : String,internetUsage : Float,minutesUsage : Float,ratePerGb:Float,ratePerMinute:Float)
     {
     self.manufacturerName=manufacturerName
     self.planName=planName
@@ -25,7 +25,7 @@ init(billId:Int,billDate:String,billType:BillType,manufacturerName : String,plan
     self.internetUsage=internetUsage
     self.minutesUsage=minutesUsage
     self.ratePerMinute=ratePerMinute
-    self.ratePerGb=ratePerGb
+    self.ratePerGb=ratePerGb 
     super.init(billId:billId,billDate:billDate,billType:billType)
     }
     /*func getManufacturerName()->String
