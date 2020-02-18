@@ -35,6 +35,30 @@ func display()
            print("\t Bill Date : \(billDate)")
            print("\t Bill Type : \(billType)")
            print("\t Bill Amount : \(totalBillAmount.currency())")
+     /*  func getBillId()->Int
+        {
+        return billId
+        }
+        
+        func setBillId(billId:Int)
+        {
+        self.billId=billId
+        }
+        
+        func getBillType()->BillType
+        {
+        return self.billType
+        }
+        func setBillType(billType:BillType){
+        self.billType=billType}
+        
+        func getBillDate()->Date
+        {
+            return self.billDate
+        }
+        func setBillDate(billDate:Date){
+        self.billDate=billDate
+    }*/
     }
     
 }
