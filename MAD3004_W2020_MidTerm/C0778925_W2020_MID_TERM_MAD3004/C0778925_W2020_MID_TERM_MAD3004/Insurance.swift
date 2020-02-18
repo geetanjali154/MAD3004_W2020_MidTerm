@@ -22,8 +22,8 @@ class Insurance:Bill
     {
         self.insuranceProviderName=insuranceProviderName
         self.typeOfInsurance=typeOfInsurance
-        self.startDate=startDate
-        self.endDate=endDate
+        self.startDate=startDate.dateSet(input: startDate)
+        self.endDate=endDate.dateSet(input: endDate)
         self.totalDays=totalDays
         self.totalInstallmentToPay=totalInstallmentToPay
         super.init(billId:billId,billDate:billDate,billType:billType)
@@ -33,6 +33,10 @@ class Insurance:Bill
         super.display()
         print("\t Insurance Provider Name\(insuranceProviderName)")
         print("\t Type of Insurance\(typeOfInsurance)")
+        print("\t Start Date\(startDate)")
+        print("\t End Date\(endDate)")
+        print("\t total number of days\(totalDays)")
+        print("\t total installment to pay\(totalInstallmentToPay)")
         
     }
     
