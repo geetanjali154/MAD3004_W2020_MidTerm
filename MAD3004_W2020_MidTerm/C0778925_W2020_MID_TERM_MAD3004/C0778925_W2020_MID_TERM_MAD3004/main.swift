@@ -8,9 +8,9 @@
 
 import Foundation
 
-  var  m1 = Mobile(billId: "MOB1", billDate: "10/10/2019", billType: .Mobile, manufacturerName: "Apple Inc.", planName: "LTE+3G", mobileNumber: "+17896785678", internetUsage: 5,ratePerGb: 2, minutesUsage: 150,ratePerMinute: 1)
+  var  m1 = Mobile(billId: "MOB1", billDate: "10/10/2019", billType: .Mobile, manufacturerName: "Apple Inc.", planName: "LTE+3G", mobileNumber: 17896785678, internetUsage: 5,ratePerGb: 2, minutesUsage: 150,ratePerMinute: 1)
 m1.calculateTotal()
-var  m2 = Mobile(billId: "MOB2", billDate: "02/10/2020", billType: .Mobile, manufacturerName: "Apple Inc.", planName: "LTE+2G", mobileNumber: "+17896785677", internetUsage: 40,ratePerGb: 1.5, minutesUsage: 30,ratePerMinute: 1)
+var  m2 = Mobile(billId: "MOB2", billDate: "02/10/2020", billType: .Mobile, manufacturerName: "Apple Inc.", planName: "LTE+2G", mobileNumber: 17896785677, internetUsage: 40,ratePerGb: 1.5, minutesUsage: 30,ratePerMinute: 1)
 m2.calculateTotal()
 var h1 = Hydro(billId: "HYD001", billDate: "05/03/2019", billType: .Hydro, agencyName: "Toronto Hydro",unitConsumed:50,ratePerUnit:2.5)
 h1.calculateTotal()
@@ -26,7 +26,7 @@ var c2 = Customer(customerId: 3, firstName: "Manpreet", lastName: "Kaur", emailA
 
 
   c1.addBill(bill: h1, billId: h1.billId)
-  c1.addBill(bill: m1, billId: m1.billId)
+c1.addBill(bill: m1, billId: m1.billId)
  c1.addBill(bill: i1, billId: i1.billId)
  c2.addBill(bill: m2, billId: m2.billId)
  c2.addBill(bill: i2, billId: i2.billId)
@@ -35,18 +35,4 @@ c1.display()
 c2.display()
 c3.display()
 
-var arrayOfCustomers = Array <Customer>()
-arrayOfCustomers.append(c1)
-arrayOfCustomers.append(c2)
-func customersById(id:Int){
-for i in arrayOfCustomers
-      {
-          if id==i.customerId
-          {
-           i.display()
-              
-          }
-         }
-      }
 
-customersById(id: 3)

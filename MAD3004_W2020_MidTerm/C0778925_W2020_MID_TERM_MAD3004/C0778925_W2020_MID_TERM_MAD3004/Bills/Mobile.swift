@@ -11,16 +11,17 @@ class Mobile:Bill
 {
 var manufacturerName : String
 var planName : String
-var mobileNumber : String
+var mobileNumber : Int
 var internetUsage : Float
 var ratePerGb:Float
 var minutesUsage : Float
 var ratePerMinute:Float
 
-    init(billId:String,billDate:String,billType:BillType,manufacturerName : String,planName : String,mobileNumber : String,internetUsage : Float,ratePerGb:Float,minutesUsage : Float,ratePerMinute:Float)
+    init(billId:String,billDate:String,billType:BillType,manufacturerName : String,planName : String,mobileNumber : Int,internetUsage : Float,ratePerGb:Float,minutesUsage : Float,ratePerMinute:Float)
     {
     self.manufacturerName=manufacturerName
     self.planName=planName
+        
     self.mobileNumber=mobileNumber
     self.internetUsage=internetUsage
     self.minutesUsage=minutesUsage
@@ -33,7 +34,7 @@ var ratePerMinute:Float
     return self.manufacturerName
     }
     func setManufacturerName(manufacturerName:String)
-    {
+    {t
     self.manufacturerName=manufacturerName
     }
     func getPlanName()->String
@@ -93,6 +94,7 @@ var ratePerMinute:Float
    // {
      //   print(self.billDate.dateSet(input: billDate))
     //}
+    
     override func calculateTotal()
     {
         self.totalBillAmount=Double(minutesUsage*ratePerMinute+internetUsage*ratePerGb)
