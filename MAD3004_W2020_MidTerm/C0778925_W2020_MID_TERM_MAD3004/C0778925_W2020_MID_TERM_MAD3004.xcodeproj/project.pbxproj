@@ -84,7 +84,6 @@
 				9B0ADB1B23F759200094184A /* main.swift */,
 				9B0ADB2A23F75DD70094184A /* Customer.swift */,
 				9B0ADB3623FC58510094184A /* IDisplay.swift */,
-				9B0ADB3C23FCA23E0094184A /* Insurance.swift */,
 			);
 			path = C0778925_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -103,6 +102,7 @@
 		BD09274723FC83C500F6ACB9 /* Bills */ = {
 			isa = PBXGroup;
 			children = (
+				9B0ADB3C23FCA23E0094184A /* Insurance.swift */,
 				9B0ADB2623F75C860094184A /* Hydro.swift */,
 				9B0ADB2823F75D630094184A /* Internet.swift */,
 				9B0ADB2423F75AEA0094184A /* Mobile.swift */,

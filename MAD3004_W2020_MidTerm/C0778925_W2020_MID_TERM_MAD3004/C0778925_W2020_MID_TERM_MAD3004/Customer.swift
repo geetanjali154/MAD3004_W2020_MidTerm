@@ -100,15 +100,15 @@ self.lastName=lastName
         print("Customer FullName : \(fullName)")
         print("Customer Email ID : \(String(describing: emailAddress))")
         print("\t ---- Bill Information ----")
-        print("\t ******************************************")
+        print("\t ****************************************")
         for b in bills
         {
             
             b.value.display()
-            print("\t ******************************************")
+            print("\t ****************************************")
         }
             print("\t Total Bill to Pay : \(total().currency())") 
-        print("\t ****************************************** \n \n")
+        print(" ******************************************************* \n \n")
     }
 
 }
