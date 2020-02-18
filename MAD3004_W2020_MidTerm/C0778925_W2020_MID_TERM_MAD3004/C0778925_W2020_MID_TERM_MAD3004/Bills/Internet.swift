@@ -10,9 +10,9 @@ import Foundation
 class Internet:Bill
 {
 var providerName:String
-var internetGbUsed:Int
-var ratePerGb:Int
-init(billId:Int,billDate:String,billType:BillType,providerName:String,internetGbUsed:Int,ratePerGb:Int)
+var internetGbUsed:Float
+var ratePerGb:Float
+init(billId:String,billDate:String,billType:BillType,providerName:String,internetGbUsed:Float,ratePerGb:Float)
 {
 
 self.providerName=providerName
@@ -47,6 +47,11 @@ func setRatePerGb(ratePerGb:Int)
 {
 self.ratePerGb=ratePerGb
 }*/
+    override func calculateTotal()
+    {
+        self.totalBillAmount=Double(ratePerGb*internetGbUsed)
+    }
+    
     override func display()
     {
         super.display()

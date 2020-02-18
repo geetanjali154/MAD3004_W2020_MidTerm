@@ -11,13 +11,13 @@ enum BillType{
 case Mobile,Internet,Hydro}
 class Bill:IDisplay
 {
-var billId:Int
+var billId:String
 var billDate:String
 var billType:BillType
-    var totalBillAmount:Double=0.00
+var totalBillAmount:Double=0.00
 
 
-init(billId:Int,billDate:String,billType:BillType)
+init(billId:String,billDate:String,billType:BillType)
 {
 self.billId=billId
 self.billDate=billDate.dateSet(input: billDate)
@@ -48,6 +48,9 @@ self.billType=billType
     func setBillDate(billDate:Date){
     self.billDate=billDate
 }*/
+    func calculateTotal()
+    {
+    }
     
 func display()
 {

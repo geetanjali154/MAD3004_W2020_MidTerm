@@ -18,10 +18,10 @@ var lastName:String
     lazy var bills=[String : Bill]()
 
 var emailAddress:String?
-    
+   
     var totalBillToPay:Double=0.00
     
-init(billId:Int,billDate:String,billType:BillType,customerId:Int,firstName:String,lastName:String,emailAddress:String,totalBillToPay:Double)
+init(customerId:Int,firstName:String,lastName:String,emailAddress:String)
 {
 self.customerId=customerId
 self.firstName=firstName
@@ -90,6 +90,11 @@ self.lastName=lastName
         }
         return totalBillToPay
 }
+    
+    
+    
+
+
         func display() {
         print("Customer ID : \(customerId)")
         print("Customer FullName : \(fullName)")
@@ -102,7 +107,7 @@ self.lastName=lastName
             b.value.display()
             print("\t ******************************************")
         }
-        print("\t Total Bill to Pay : \(total())") 
+            print("\t Total Bill to Pay : \(total().currency())") 
         print("\t ****************************************** \n \n")
     }
 

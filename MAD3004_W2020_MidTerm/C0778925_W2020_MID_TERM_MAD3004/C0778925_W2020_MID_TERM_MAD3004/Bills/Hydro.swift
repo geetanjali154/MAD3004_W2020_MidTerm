@@ -11,8 +11,8 @@ class Hydro:Bill
 {
 var agencyName:String
 var unitConsumed:Int
-var ratePerUnit:Int
-init(billId:Int,billDate:String,billType:BillType,agencyName:String,unitConsumed:Int,ratePerUnit:Int)
+var ratePerUnit:Float
+init(billId:String,billDate:String,billType:BillType,agencyName:String,unitConsumed:Int,ratePerUnit:Float)
 {
 self.agencyName=agencyName
 self.unitConsumed=unitConsumed 
@@ -46,6 +46,10 @@ func setAgencyName(agencyName:String)
 {
 self.agencyName=agencyName
 }*/
+ override func calculateTotal()
+    {
+        self.totalBillAmount=Double(Float(unitConsumed)*ratePerUnit)
+    }
     override func display() {
         super.display()
         print("\t Agency Name : \(agencyName)")
