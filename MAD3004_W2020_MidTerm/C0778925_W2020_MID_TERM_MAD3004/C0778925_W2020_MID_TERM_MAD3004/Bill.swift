@@ -20,7 +20,7 @@ var billType:BillType
 init(billId:Int,billDate:String,billType:BillType)
 {
 self.billId=billId
-self.billDate=billDate
+self.billDate=billDate.dateSet(input: billDate)
 self.billType=billType
 }
     

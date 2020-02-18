@@ -82,7 +82,7 @@ self.lastName=lastName
     {
         if bills.count == 0
         {
-            print("\t No bill found for \(customerId)")
+            print("\t No bill found")
         }
         for b in bills
         {
