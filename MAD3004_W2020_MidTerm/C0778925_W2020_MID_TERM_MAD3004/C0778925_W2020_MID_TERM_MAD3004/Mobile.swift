@@ -89,8 +89,17 @@ init(billId:Int,billDate:String,billType:BillType,manufacturerName : String,plan
     {
     self.ratePerGb=ratePerGb
     }*/
-    func display()
-    {
-        print(self.billDate.dateSet(input: billDate))
-    }
+  // override func display()
+   // {
+     //   print(self.billDate.dateSet(input: billDate))
+    //}
+    override func display() {
+           super.display()
+           print("\t Mobile Nanufacture Name : \(manufacturerName)")
+           print("\t Mobile Plan Name : \(planName)")
+           print("\t Mobile Number : \(mobileNumber)")
+           print("\t Mobile Internet Used : \(internetUsage.gb())")
+           print("\t Minuted Usef : \(minutesUsage.min())")
+           
+       }
 }

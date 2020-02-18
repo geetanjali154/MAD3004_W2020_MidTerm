@@ -9,17 +9,14 @@
 import Foundation
 enum BillType{
 case Mobile,Internet,Hydro}
-class Bill:DisplayDelegate
+class Bill:IDisplay
 {
 var billId:Int
 var billDate:String
 var billType:BillType
-var totalBillAmount:Double?
+    var totalBillAmount:Double=0.00
 
-func getTotalBillAmount()->Double
-{
-    return self.totalBillAmount ?? 0.00
-}
+
 init(billId:Int,billDate:String,billType:BillType)
 {
 self.billId=billId
@@ -52,7 +49,14 @@ self.billType=billType
     self.billDate=billDate
 }*/
     
-
+func display()
+{
+    print("\t Bill ID : \(billId)")
+           print("\t Bill Date : \(billDate)")
+           print("\t Bill Type : \(billType)")
+           print("\t Bill Amount : \(totalBillAmount.totalBill())")
+    }
+    
 }
 
 

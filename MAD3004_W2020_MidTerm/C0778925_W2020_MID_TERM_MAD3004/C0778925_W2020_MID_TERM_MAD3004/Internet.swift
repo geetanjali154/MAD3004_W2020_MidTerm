@@ -47,5 +47,12 @@ func setRatePerGb(ratePerGb:Int)
 {
 self.ratePerGb=ratePerGb
 }*/
+    override func display()
+    {
+        super.display()
+        print("\t Provider Name : \(providerName)")
+        print("\t Internet GB Used : \(internetGbUsed.gb())")
+    }
+   
 }
 

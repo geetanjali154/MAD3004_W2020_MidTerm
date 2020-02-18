@@ -10,12 +10,12 @@ import Foundation
 class Hydro:Bill
 {
 var agencyName:String
-var unitComsumed:Int
+var unitConsumed:Int
 var ratePerUnit:Int
-init(billId:Int,billDate:String,billType:BillType,agencyName:String,unitComsumed:Int,ratePerUnit:Int)
+init(billId:Int,billDate:String,billType:BillType,agencyName:String,unitConsumed:Int,ratePerUnit:Int)
 {
 self.agencyName=agencyName
-self.unitComsumed=unitComsumed
+self.unitConsumed=unitConsumed 
 self.ratePerUnit=ratePerUnit
 super.init(billId:billId,billDate:billDate,billType:billType)
     }
@@ -46,4 +46,9 @@ func setAgencyName(agencyName:String)
 {
 self.agencyName=agencyName
 }*/
+    override func display() {
+        super.display()
+        print("\t Agency Name : \(agencyName)")
+        print("\t Units Consumed : \(unitConsumed.unit())")
+    }
 }
