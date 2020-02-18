@@ -53,6 +53,20 @@ for i in arrayOfCustomers
           }
     }
       }
+var arrayOfBills:[String:Customer]
+func getBillsById(
+arrayOfBills.updateValue(Customer, forKey: billId)
+
+
+func billsById(id:String)
+{
+for i in arrayOfBills
+{
+    if id==i.billId
+    {
+        
+    }
+}
 
 customersById(id: 3)
 
