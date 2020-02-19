@@ -28,11 +28,9 @@ var ratePerMinute:Float
     self.ratePerMinute=ratePerMinute
     self.ratePerGb=ratePerGb
     super.init(billId:billId,billDate:billDate,billType:billType)
-        if isValidPhone(number: mobileNumber){
-            self.mobileNumber=mobileNumber}
-        else{
-            print("Invalid Mobile Number")
-        }
+       self.mobileNumber=mobileNumber
+       
+        
     }
     /*func getManufacturerName()->String
     {
@@ -99,11 +97,7 @@ var ratePerMinute:Float
    // {
      //   print(self.billDate.dateSet(input: billDate))
     //}
-    func isValidPhone(number:Int)-> Bool {
-       let regularExpressionForPhone = "^\\d{3}-\\d{3}-\\d{4}$"
-       let testPhone = NSPredicate(format:"SELF MATCHES %@", regularExpressionForPhone)
-       return testPhone.evaluate(with: self)
-    }
+    
     override func calculateTotal()
     {
         self.totalBillAmount=Double(minutesUsage*ratePerMinute+internetUsage*ratePerGb)
